@@ -348,3 +348,8 @@ footer a {
 .centrovany {
   text-align: center;
 }
+.big{
+  width: 100%;      
+  height: auto;     
+  display: block;   
+}
