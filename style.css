@@ -324,19 +324,6 @@ footer a {
         box-sizing: border-box;
     }
 
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-    }
-
     #logo {
         padding-left: 0;
         margin-bottom: 10px;
@@ -346,12 +333,26 @@ footer a {
         margin: 0 auto;
     }
 
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        padding: 0 10px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
     article {
         padding: 20px 1rem 10px 1rem;
     }
 
-    #dovednosti, 
-    #dovednosti tr, 
+    #dovednosti,
+    #dovednosti tr,
     #dovednosti td {
         display: block;
         width: 100%;
