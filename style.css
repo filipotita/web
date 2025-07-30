@@ -1,3 +1,4 @@
+css
 * {
     box-sizing: border-box;
 }
@@ -28,26 +29,29 @@ body {
     margin: 0;
     padding: 100px 1rem 0 1rem;
     min-width: 0;
+    overflow-x: hidden; /* zabránění horizontálnímu scrollu */
 }
 
 body > header {
     height: 100px;
     width: 100%;
+    max-width: 100%;
     background: #00386B;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* změna na space-between pro přirozenější rozložení */
     position: fixed;
     z-index: 10;
     top: 0;
     padding: 0 1rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* desktop zůstane v řádku */
     box-sizing: border-box;
+    overflow: hidden; /* odstranění přetečení */
 }
 
 #logo {
     height: 40px;
-    margin: auto 0 auto 20px;
+    margin: auto 0 auto 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +59,7 @@ body > header {
     background-size: 40px 40px;
     padding-left: 50px;
     min-width: 150px;
+    box-sizing: border-box;
 }
 
 #logo > * {
@@ -85,12 +90,13 @@ nav ul {
     display: flex;
     height: 100%;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
 }
 
 nav ul li {
     margin: 0 5px;
-    padding: 0 15px;
+    padding: 0 10px; /* snížené na 10px */
     font-size: 1em;
     white-space: nowrap;
 }
@@ -103,18 +109,22 @@ nav ul a {
     display: block;
 }
 
-nav ul a:hover, .aktivni a {
+nav ul a:hover,
+.aktivni a {
     border-bottom: 2px solid #EF6534;
 }
 
-.kontakt-tlacitko, .kontakt-tlacitko-aktivni {
+.kontakt-tlacitko,
+.kontakt-tlacitko-aktivni {
     background: #EF653480;
     padding: 10px 20px;
     border-radius: 20px;
     transition: font-size 2s, background-color 2s;
+    white-space: nowrap;
 }
 
-.kontakt-tlacitko:hover, .kontakt-tlacitko-aktivni {
+.kontakt-tlacitko:hover,
+.kontakt-tlacitko-aktivni {
     filter: brightness(115%) contrast(85%);
     border: 0;
     font-size: 1.5em;
@@ -214,7 +224,7 @@ article section a {
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .avatar {
@@ -307,6 +317,7 @@ footer a {
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -314,14 +325,21 @@ footer a {
 }
 
 @media (max-width: 767px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
     body > header {
         flex-direction: column;
         height: auto;
         padding: 10px 1rem;
         align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     #logo {
@@ -331,12 +349,16 @@ footer a {
         background-size: 30px 30px;
         height: auto;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     nav ul {
         flex-direction: column;
         width: 100%;
         padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        align-items: center;
     }
 
     nav ul li {
@@ -345,6 +367,11 @@ footer a {
         width: 100%;
         text-align: center;
         box-sizing: border-box;
+        white-space: normal;
+    }
+
+    nav ul a {
+        padding: 10px 0;
     }
 
     article {
