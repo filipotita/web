@@ -1,3 +1,7 @@
+css
+* {
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: Poppins;
@@ -15,232 +19,88 @@ html {
     background-color: #414042;
     height: 100%;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 
 body {
-
-
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  padding:100px 0px 0px 0px;
-  min-width: 0;
-
+    font-family: Poppins, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 100px 1rem 0 1rem;
+    min-width: 0;
 }
+
 body > header {
     height: 100px;
     width: 100%;
     background: #00386B;
     color: white;
-    display:flex;
-     justify-content: space-evenly;
-     position: fixed;
-    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 10;
     top: 0;
-    
+    padding: 0 1rem;
+    flex-wrap: wrap;
 }
 
-dt {
-  font-weight:bold;
-  font-size:1.05em;
-  margin-left: 4em;
-}
-dd{
-  margin-left:6em;
-}
-
-
-
-  .omne header h1 {
-  font-size: 3rem;
-}
-
-
-
-article {
-  
-  padding: 2rem;
-  max-width: 960px;
- margin: 0 auto;
- padding: 50px 50px 10px 50px;
-
-
-
-}article header h1 {  font-size:2em;
-  color: #00386B;
-  border-bottom: 4px solid #EF6534;
-
-    width: max-content;
-    
-     margin: 0;
-  
-}
-
-article section p {
-    margin-bottom: 1.5em;
-    line-height: 1.8em;
-}
-
-
-article section a {
-    color: #EF6534;
-}
-
-.skills, .contact, .job .hobby {
-
-  
-  background-color: white;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-article h1{  font-size:2em;
-  color: #00386B;
-  border-bottom: 4px solid #EF6534;
-
-    width: max-content;
-    
-     margin: 0;
-  }
-article header h1{
-  color:aliceblue;
-  width: 100vw;
-  background-color: #007acc;
-  padding: 2rem 0;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  box-sizing: border-box;
-  text-align: center;
-border:none;
-text-shadow:2px 3px 1px #000000;
-animation: prijed-zprava 1.5s ease forwards;
-}
-
-@keyframes prijed-zprava {
-  from {
-    transform: translateX(100%); /* začíná úplně vpravo mimo obraz */
-    opacity: 0;                  /* může být třeba i průhledný */
-  }
-  to {
-    transform: translateX(0);    /* končí na původní pozici */
-    opacity: 1;                  /* plná viditelnost */
-  }
-
-   
-
-}
-article header h1 p {
-  font-size:0.5em;
-  text-align:center;
-}
-
-article h2 {
-  font-size: 1.7em;
- 
-    
-}
-article h2,
-article h3,
-article h4,
-article h5,
-article h6 {
-    color: #00386B;
-  margin-top: 0;
-  padding: 10px 0;
-    
-  
-
-}
-
-
-footer {
-  
-  text-align: center;
-  padding: 1rem;
-  background-color: #eee;
-  color: #666;
-
-  
-}
-
-.avatar{
-  height:20em;
-  max-height: 500px;
-     float: right;
-    padding-left: 10px;
-    filter: grayscale(1);
-   
-}
-.cistic {
-    clear: both;
-}
-
-
-
-
-
-.omne-tlacitko {
-    background: #70B73A;
-    color: white;
-    font-size: 0.9em;
-    text-transform: uppercase;
-     text-decoration: none;
-      padding: 12px 25px;
-      border-radius: 25px;
-      
-}
 #logo {
     height: 40px;
     margin: auto 0 auto 20px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     background: url("obrázek/logo.png") no-repeat;
     background-size: 40px 40px;
+    padding-left: 50px;
+    min-width: 150px;
 }
+
 #logo > * {
     margin: 0 0 0 50px;
 }
+
 #logo h1 {
     font-weight: normal;
     font-size: 1.5em;
     line-height: 1.2em;
     color: white;
 }
+
 #logo h1 span {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 #logo small {
     text-transform: uppercase;
     font-size: 0.85em;
 }
-nav ul {
 
-  list-style-type:none;
-  margin:0 ;
-  display:flex;
-  height:100%;
-  align-items:center;
-  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
 }
-nav ul li{
-  margin:0 5px;
-  padding:0 25px;
-  font-size:1em;
-  line-height: 4,3em;
+
+nav ul li {
+    margin: 0 5px;
+    padding: 0 15px;
+    font-size: 1em;
+    white-space: nowrap;
 }
 
 nav ul a {
-
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 8px 0px;
-  color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 0;
+    color: white;
+    display: block;
 }
 
 nav ul a:hover, .aktivni a {
@@ -248,53 +108,135 @@ nav ul a:hover, .aktivni a {
 }
 
 .kontakt-tlacitko, .kontakt-tlacitko-aktivni {
-
-   background: #EF653480;
+    background: #EF653480;
     padding: 10px 20px;
     border-radius: 20px;
-
-    transition: 
-    font-size 2s,
-    background-color 2s;
-
-    
+    transition: font-size 2s, background-color 2s;
 }
 
-
-.kontakt-tlacitko:hover,.kontakt-tlacitko-aktivni
- {
+.kontakt-tlacitko:hover, .kontakt-tlacitko-aktivni {
     filter: brightness(115%) contrast(85%);
     border: 0;
+    font-size: 1.5em;
+    background-color: #EF6534;
+}
 
-  
-   font-size:1.5em;
-   background-color: #EF6534;
-               
-  
-  
+.omne-tlacitko {
+    background: #70B73A;
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
 }
 
 .omne-tlacitko:hover {
     filter: brightness(115%) contrast(85%);
     border: 0;
-
-  
-  
-               
-  
-  
 }
 
-html {
-    background: #414042;
+dt {
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-left: 4em;
 }
+
+dd {
+    margin-left: 6em;
+}
+
+.omne header h1 {
+    font-size: 3rem;
+}
+
+article {
+    padding: 50px 20px 10px 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+article header h1 {
+    font-size: 2em;
+    color: aliceblue;
+    width: 100vw;
+    background-color: #007acc;
+    padding: 2rem 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    text-shadow: 2px 3px 1px #000000;
+    animation: prijed-zprava 1.5s ease forwards;
+}
+
+article header h1 p {
+    font-size: 0.5em;
+    text-align: center;
+}
+
+article h1 {
+    font-size: 2em;
+    color: #00386B;
+    border-bottom: 4px solid #EF6534;
+    width: max-content;
+    margin: 0;
+}
+
+article h2 {
+    font-size: 1.7em;
+}
+
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: #00386B;
+    margin-top: 0;
+    padding: 10px 0;
+}
+
+article section p {
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+}
+
+article section a {
+    color: #EF6534;
+}
+
+.skills,
+.contact,
+.job .hobby {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    height: 20em;
+    max-height: 500px;
+    float: right;
+    padding-left: 10px;
+    filter: grayscale(1);
+    max-width: 100%;
+}
+
+.cistic {
+    clear: both;
+}
+
 footer {
     box-sizing: border-box;
     text-align: center;
     height: 100px;
     color: white;
     background: #414042;
-    padding: 50px 0 0 0;
+    padding: 50px 1rem 0 1rem;
     clip-path: polygon(0 30px, 100% 0, 100% 105%, 0px 105%);
 }
 
@@ -302,54 +244,132 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
 .vlevo {
     float: left;
 }
-.bigfont{
-  font-size: 1.5em;
-  color: #ffffff;
-  background:#00386B;
-  border-radius:10px;
-  padding:10px
-}
-.formular {
-  border :4px solid;
-  margin-top: 5em;
-  margin-bottom:5em;
-  box-sizing: border-box;
-  border-radius: 10px;
-  color: #00386B;
-  background:#007acc;
-  box-shadow: 10px 10px 10px #00386B;
+
+.bigfont {
+    font-size: 1.5em;
+    color: #ffffff;
+    background: #00386B;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.ikona-dovednosti{
-  width:10em;
+.formular {
+    border: 4px solid;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #00386B;
+    background: #007acc;
+    box-shadow: 10px 10px 10px #00386B;
+}
+
+.ikona-dovednosti {
+    width: 10em;
+    max-width: 100%;
+    height: auto;
+}
+
+#dovednosti {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 #dovednosti td {
-
-   transition: background-color 5s ease;
-  border-radius: 20px;
-  padding:10px;
-   width: 33%;
+    transition: background-color 0.5s ease;
+    border-radius: 20px;
     padding: 10px;
-       vertical-align: top;
-        border-collapse: collapse;
-  
+    width: 33%;
+    vertical-align: top;
+    text-align: center;
 }
 
-#dovednosti td:hover{
-
-  background-color:rgb(8, 250, 8);
-  border-radius: 20px;
-  padding:10px;
+#dovednosti td:hover {
+    background-color: rgb(8, 250, 8);
 }
+
 .centrovany {
-  text-align: center;
+    text-align: center;
 }
-.big{
-  width: 100%;      
-  height: auto;     
-  display: block;   
+
+.big {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes prijed-zprava {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    body > header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 1rem;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo {
+        padding-left: 0;
+        margin-bottom: 10px;
+        min-width: auto;
+        background-size: 30px 30px;
+        height: auto;
+        margin: auto;
+    }
+
+    article {
+        padding: 20px 1rem 10px 1rem;
+    }
+
+    #dovednosti, 
+    #dovednosti tr, 
+    #dovednosti td {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #dovednosti td:hover {
+        background-color: rgb(8, 250, 8);
+    }
+
+    .ikona-dovednosti {
+        width: 6em;
+    }
+
+    .avatar {
+        height: auto;
+        max-width: 80%;
+        margin: 0 auto 1rem auto;
+        float: none;
+        display: block;
+    }
 }
