@@ -1,4 +1,3 @@
-css
 * {
     box-sizing: border-box;
 }
@@ -43,6 +42,7 @@ body > header {
     top: 0;
     padding: 0 1rem;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 #logo {
@@ -319,6 +319,9 @@ footer a {
         height: auto;
         padding: 10px 1rem;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     nav ul {
@@ -340,7 +343,7 @@ footer a {
         min-width: auto;
         background-size: 30px 30px;
         height: auto;
-        margin: auto;
+        margin: 0 auto;
     }
 
     article {
