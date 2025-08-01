@@ -328,6 +328,9 @@ footer a {
     html {
         overflow-x: hidden;
     }
+    article>header{
+        padding-top:21em;
+    }
 
     body {
         padding-top: 21em;
