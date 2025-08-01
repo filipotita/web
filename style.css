@@ -329,11 +329,11 @@ footer a {
         overflow-x: hidden;
     }
     article>header {
-        padding-top:21em;
+        padding-top:1em;
     }
 
     body {
-        padding-top: 1em;
+        padding-top: 21em;
     }
 
     body > header {
