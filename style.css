@@ -336,7 +336,7 @@ footer a {
     body > header {
         flex-direction: column;
         height: auto;
-        padding: 10px 1rem;
+        padding-top:12em;
         align-items: center;
         justify-content: center;
         width: 100%;
