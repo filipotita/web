@@ -26,7 +26,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     margin: 0;
-    padding: 100px 1rem 0 1rem;
+    padding-top:3.2em;
     min-width: 0;
     overflow-x: hidden;
 }
@@ -56,13 +56,13 @@ body > header {
     justify-content: center;
     background: url("obrázek/logo.png") no-repeat;
     background-size: 40px 40px;
-    padding-left: 50px;
+    padding-left: 5px;
     min-width: 150px;
     box-sizing: border-box;
 }
 
 #logo > * {
-    margin: 0 0 0 50px;
+    margin: 0px 0 0 50px;
 }
 
 #logo h1 {
@@ -289,7 +289,7 @@ footer a {
 }
 
 #dovednosti td {
-    transition: background-color 0.5s ease;
+    transition: background-color 5s ease;
     border-radius: 20px;
     padding: 10px;
     width: 33%;
@@ -328,18 +328,15 @@ footer a {
     html {
         overflow-x: hidden;
     }
-    article>header {
-        padding-top:1em;
-    }
 
     body {
-        padding-top: 21em;
+        padding-top: 20.5em;
     }
 
     body > header {
         flex-direction: column;
         height: auto;
-        padding:1em;
+        padding: 10px 1rem;
         align-items: center;
         justify-content: center;
         width: 100%;
